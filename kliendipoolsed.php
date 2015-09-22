@@ -5,6 +5,13 @@
     <title>RasmusPind PseudoProject</title>
 </head>
 <body>
+<button onclick="myFunction()">Tere maailm</button>
+
+<script>
+    function myFunction() {
+        alert("tere maailm");
+    }
+</script>
 
 </body>
 </html>
