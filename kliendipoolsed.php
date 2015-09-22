@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>RasmusPind PseudoProject</title>
+    <script type=text/javascript src="code.jquery.com/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <!-- 2. Tere maailm button algus -->
@@ -54,5 +55,12 @@
     }
 </script>
 <!-- 5.  Kass koeraks lõpp -->
+<br>
+<!-- 6. jQuery kass koeraks algus -->
+<!-- JÄÄB HETKEL POOLELI, TULEB LÕPETADA HILJEM!!! -->
+<!-- 6. jQuery kass koeraks lõpp -->
+<br>
+
+
 </body>
 </html>
