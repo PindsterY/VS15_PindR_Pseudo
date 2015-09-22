@@ -13,8 +13,8 @@
         alert("tere maailm");
     }
 </script>
-<!-- 2. Tere maailm button l�pp -->
-
+<!-- 2. Tere maailm button lõpp -->
+<br>
 <!-- 3.  Link tekstiga tere maailm, millele klikkides kuvab brauser teadet tere maailm ja siis navigeerib aadressile www.khk.ee -->
 <script type="text/javascript">
     function AlertIt() {
@@ -25,7 +25,21 @@
 </script>
 
 <a href="javascript:AlertIt();">tere maailm</a>
-<!-- 3.  Link tekstiga tere maailm, l�pp -->
+<!-- 3.  Link tekstiga tere maailm, lõpp -->
+<br>
+
+<!-- 4.  Navigeerimatu link algus -->
+<script type="text/javascript">
+    function AlertIt() {
+        var answer = confirm ("jääme siia");
+        if (answer)
+            window.location="#";
+    }
+</script>
+
+<a href="javascript:AlertIt();">Jääme siia</a>
+<!-- 4.  Navigeerimatu link lõpp -->
+<br>
 
 </body>
 </html>
