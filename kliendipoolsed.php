@@ -40,6 +40,19 @@
 <a href="javascript:AlertIt();">Jääme siia</a>
 <!-- 4.  Navigeerimatu link lõpp -->
 <br>
+<!-- 5.  Kass koeraks algus -->
+<img id="kassKoeraks" onclick="changeImage()" src="assets/img/kass.jpg" width="20%" height="20%">
 
+<script>
+    function changeImage() {
+        var image = document.getElementById('kassKoeraks');
+        if (image.src.match("koer")) {
+            image.src = "assets/img/kass.jpg";
+        } else {
+            image.src = "assets/img/koer.jpg";
+        }
+    }
+</script>
+<!-- 5.  Kass koeraks lõpp -->
 </body>
 </html>
