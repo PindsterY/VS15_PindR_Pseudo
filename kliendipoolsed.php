@@ -17,14 +17,14 @@
 <br>
 <!-- 3.  Link tekstiga tere maailm, millele klikkides kuvab brauser teadet tere maailm ja siis navigeerib aadressile www.khk.ee -->
 <script type="text/javascript">
-    function AlertIt() {
+    function AlertIt1() {
         var answer = confirm ("tere maailm");
         if (answer)
             window.location="http://www.khk.ee";
     }
 </script>
 
-<a href="javascript:AlertIt();">tere maailm</a>
+<a href="javascript:AlertIt1();">tere maailm</a>
 <!-- 3.  Link tekstiga tere maailm, lõpp -->
 <br>
 
