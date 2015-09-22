@@ -60,7 +60,33 @@
 <!-- JÄÄB HETKEL POOLELI, TULEB LÕPETADA HILJEM!!! -->
 <!-- 6. jQuery kass koeraks lõpp -->
 <br>
+<!-- 7. jQuery taustavärvi muutmine algus -->
+<button type="submit" onclick="redButton()">red</button>
 
+<script>
+    function redButton() {
+        document.body.style.backgroundColor = "red";
+    }
+</script>
+
+<button type="submit" onclick="greenButton()">green</button>
+
+<script>
+    function greenButton() {
+        document.body.style.backgroundColor = "green";
+    }
+</script>
+
+<button type="submit" onclick="blueButton()">blue</button>
+
+<script>
+    function blueButton() {
+        document.body.style.backgroundColor = "blue";
+    }
+</script>
+
+
+<!-- 7. jQuery taustavärvi muutmine lõpp -->
 
 </body>
 </html>
