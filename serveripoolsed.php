@@ -13,7 +13,13 @@ $lastName = "Pind";
 $vanus = "23";
 $eesnimi_algab_vokaaliga = false;
 
-echo "Minu eesnimi on $firstName ja perekonnanimi $lastName ($vanus)"
+$isik = array ("$firstName", "$lastName", "($vanus)");
+
+echo "Minu eesnimi on $firstName ja perekonnanimi $lastName ($vanus)</br>";
+
+// MASSIIVID
+echo "$isik[0] $isik[1] $isik[2]</br>".PHP_EOL;
+
 ?>
 
 </body>
