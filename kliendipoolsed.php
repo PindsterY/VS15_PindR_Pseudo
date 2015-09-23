@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>RasmusPind PseudoProject</title>
-    <script type=text/javascript src="code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="jquery-2.1.4.min.js"></script>
+
 </head>
 <body>
 <!-- 2. Tere maailm button algus -->
@@ -56,9 +57,19 @@
 </script>
 <!-- 5.  Kass koeraks lõpp -->
 <br>
-<!-- 6. jQuery kass koeraks algus -->
-<!-- JÄÄB HETKEL POOLELI, TULEB LÕPETADA HILJEM!!! -->
+
+<!-- 6. jQuery kass koeraks algus --->
+<div class="kass2">
+    <img src="assets/img/kass2.jpg" width="20%" height="20%">
+</div>
+
+<script>
+    $("img[src='assets/img/kass2.jpg']").click(function (){
+        $(this).attr("src","assets/img/koer2.jpg")
+    })
+</script>
 <!-- 6. jQuery kass koeraks lõpp -->
+
 <br>
 <!-- 7. jQuery taustavärvi muutmine algus -->
 <button type="submit" onclick="redButton()">red</button>
@@ -87,6 +98,22 @@
 
 
 <!-- 7. jQuery taustavärvi muutmine lõpp -->
+<br>
+
+<!-- 8. jQuery taustavärv revisited. Clicked element value. Algus -->
+
+<button type="button" id="varviNupp">yellow</button>
+
+<script>
+    $("#varviNupp").click(function() {
+    $("body").first().css("background-color",$("#varviNupp").text());
+    });
+</script>
+
+<!-- 8. jQuery taustavärv revisited. Clicked element value. LÕPP!! -->
+<br>
+
+
 
 </body>
 </html>
