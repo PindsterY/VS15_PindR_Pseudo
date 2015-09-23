@@ -137,8 +137,18 @@
 
 <!-- 10. Parema klõpsu uuesti lubamine (button k.a) LÕPP-->
 <br>
+<!-- 11. TOGGLE. Lülita nuppu vajutades pilt välja/sisse -->
+<button type="submit" id="piltKaob">Peida pilt</button>
 
-
+<script>
+$(document).ready(function(){
+$("#piltKaob").click(function(){
+$(".kass2").toggle();
+});
+});
+</script>
+<!-- 11. TOGGLE. Lülita nuppu vajutades pilt välja/sisse -->
+<br>
 
 </body>
 </html>
