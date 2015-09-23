@@ -112,7 +112,15 @@
 
 <!-- 8. jQuery taustavärv revisited. Clicked element value. LÕPP!! -->
 <br>
-
+<!-- 9. Parema klõpsu keelamine -->
+<script>
+    $(document).ready(function(){
+        $(this).bind("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    });
+</script>
+<!-- 9. Parema klõpsu keelamine LÕPP-->
 
 
 </body>
