@@ -10,8 +10,9 @@
 <?php
 $firstName = "Rasmus";
 $lastName = "Pind";
+$vanus = "23";
 
-echo "Minu eesnimi on $firstName ja perekonnanimi $lastName"
+echo "Minu eesnimi on $firstName ja perekonnanimi $lastName ($vanus)"
 ?>
 
 </body>
