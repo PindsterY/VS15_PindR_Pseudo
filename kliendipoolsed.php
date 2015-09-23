@@ -121,6 +121,23 @@
     });
 </script>
 <!-- 9. Parema klõpsu keelamine LÕPP-->
+<br>
+
+<!-- 10. Parema klõpsu uuesti lubamine (button k.a) -->
+<button type="submit" id="lubaNupp">Luba parem klõps</button>
+
+<script>
+    $("#lubaNupp").unbind("click", function(){
+        $(this).bind("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    });
+</script>
+<!-- SEE EI TÖÖÖÖÖÖÖÖÖTA -->
+
+<!-- 10. Parema klõpsu uuesti lubamine (button k.a) LÕPP-->
+<br>
+
 
 
 </body>
