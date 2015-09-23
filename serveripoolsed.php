@@ -11,6 +11,7 @@
 $firstName = "Rasmus";
 $lastName = "Pind";
 $vanus = "23";
+$eesnimi_algab_vokaaliga = false;
 
 echo "Minu eesnimi on $firstName ja perekonnanimi $lastName ($vanus)"
 ?>
