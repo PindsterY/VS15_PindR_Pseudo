@@ -24,6 +24,11 @@ echo "$isik[0] $isik[1] $isik[2]</br>".PHP_EOL;
 if ($eesnimi_algab_vokaaliga==true) {
     echo "Nimi algab vokaaliga";
     }
+
+
+//Objektid
+//POOOLIK
+
 ?>
 
 </body>
