@@ -7,5 +7,12 @@
 <body>
 <p>Tere maailm</p>
 
+<?php
+$firstName = "Rasmus";
+$lastName = "Pind";
+
+echo "Minu eesnimi on $firstName ja perekonnanimi $lastName"
+?>
+
 </body>
 </html>
