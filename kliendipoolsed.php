@@ -127,10 +127,10 @@
 <button type="submit" id="lubaNupp">Luba parem klõps</button>
 
 <script>
-    $("#lubaNupp").unbind("click", function(){
-        $(this).bind("contextmenu", function(e) {
+    $(document).ready(function(){
+        $(this).unbind("contextmenu", function(e) {
             e.preventDefault();
-        });
+          });
     });
 </script>
 <!-- SEE EI TÖÖÖÖÖÖÖÖÖTA -->
