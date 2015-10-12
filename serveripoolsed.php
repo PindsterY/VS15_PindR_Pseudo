@@ -29,6 +29,12 @@ if ($eesnimi_algab_vokaaliga==true) {
 //Objektid
 //POOOLIK
 
+// 20. PHP floats
+$a = 1.23;
+$b = 2.34;
+$sum = $a + $b;
+echo "$sum";
+
 ?>
 
 </body>
