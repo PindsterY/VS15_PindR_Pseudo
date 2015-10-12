@@ -35,6 +35,13 @@ $b = 2.34;
 $sum = $a + $b;
 echo "$sum";
 
+//20. php floats lõpp!
+
+//21. $get
+$_GET['koer'] = 'terjer';
+// 21. LÕPP
+
+
 ?>
 
 </body>
