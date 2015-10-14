@@ -33,14 +33,15 @@ if ($eesnimi_algab_vokaaliga==true) {
 $a = 1.23;
 $b = 2.34;
 $sum = $a + $b;
-echo "$sum";
+echo "$sum</br>";
 
 //20. php floats lõpp!
 
 //21. $get
-$_GET['koer'] = 'terjer';
+if(isset($_GET['koer'])) {
+    echo $_GET ['koer']."</br>";
+};
 // 21. LÕPP
-
 
 ?>
 
