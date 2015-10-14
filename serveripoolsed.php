@@ -35,15 +35,27 @@ $b = 2.34;
 $sum = $a + $b;
 echo "$sum</br>";
 
-//20. php floats l�pp!
+//20. php floats lõpp!
 
 //21. $get
 if(isset($_GET['koer'])) {
     echo $_GET ['koer']."</br>";
 };
-// 21. L�PP
+// 21. LõPP
+
+//22. $POST
+?>
+<form action="?" method="post">
+    <input name="kass" placeholder="Kassitõug">
+    <input type="submit">
+</form>
+
+<?php
+if(isset($_POST['kass'])) {
+    echo 'Kass on: ' . $_POST['kass'] . '<br>';
+}
+//22. lõpp
 
 ?>
-
 </body>
 </html>
