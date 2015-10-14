@@ -7,9 +7,10 @@
 <body>
 
 <?php
-if(isset($_GET['id'])) {
+if(isset($_GET['page'])){
+           require $_GET['page'].".php";
+    }
 // id index exists
-}
 ?>
 
 </body>
