@@ -6,11 +6,13 @@
 </head>
 <body>
 
+
 <?php
+//23. Require
 if(isset($_GET['page'])){
            require $_GET['page'].".php";
     }
-// id index exists
+//23. Require
 ?>
 
 </body>
