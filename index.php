@@ -1,3 +1,8 @@
+<?php
+//24. Require refactor
+$page=(isset($_GET['page'])? $_GET['page'] : 'serveripoolsed');
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,8 +17,10 @@
 if(isset($_GET['page'])){
            require $_GET['page'].".php";
     }
-//23. Require
+//23. Require lõõ ja 24. Refactor
+require $page.".php";
 ?>
+
 
 </body>
 </html>
