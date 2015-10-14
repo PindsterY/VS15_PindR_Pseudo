@@ -130,7 +130,7 @@
     $(document).ready(function(){
         $(this).unbind("contextmenu", function(e) {
             e.preventDefault();
-          });
+        });
     });
 </script>
 <!-- SEE EI TÖÖÖÖÖÖÖÖÖTA -->
