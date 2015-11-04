@@ -35,8 +35,6 @@ foreach ($isik_objekt as $key=>$value) {
 
 //18. objektid lõpp
 
-
-
 // 20. PHP floats
 $a = 1.23;
 $b = 2.34;
