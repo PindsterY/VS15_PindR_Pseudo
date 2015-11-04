@@ -26,8 +26,16 @@ if ($eesnimi_algab_vokaaliga==true) {
     }
 
 
-//Objektid
-//POOOLIK
+//18. Objektid
+$isik_objekt = (object) array_merge($isik, array('sugu'=>'mees'));
+foreach ($isik_objekt as $key=>$value) {
+    echo "<p>$key : $value</p>";
+}
+
+
+//18. objektid lõpp
+
+
 
 // 20. PHP floats
 $a = 1.23;
@@ -36,6 +44,7 @@ $sum = $a + $b;
 echo "$sum</br>";
 
 //20. php floats lõpp!
+
 
 //21. $get
 if(isset($_GET['koer'])) {
