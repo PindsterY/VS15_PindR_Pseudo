@@ -115,24 +115,24 @@
 <!-- 9. Parema klõpsu keelamine -->
 <script>
     $(document).ready(function(){
-        $(this).bind("contextmenu", function(e) {
-            e.preventDefault();
+        $(document).on("contextmenu",function(){
+            return pklick;
         });
-    });
+    })
 </script>
 <!-- 9. Parema klõpsu keelamine LÕPP-->
 <br>
 
 <!-- 10. Parema klõpsu uuesti lubamine (button k.a) -->
-<button type="submit" id="lubaNupp">Luba parem klõps</button>
+<button id="rklikk">Luba parem klõps</button>
 
 <script>
-    $(document).ready(function(){
-        $(this).unbind("contextmenu", function(e) {
-            e.preventDefault();
-        });
+    var pklick=false;
+    $("#rklikk").bind("click",function(){
+        return pklick=true;
     });
-</script>
+    </script>
+
 <!-- SEE EI TÖÖÖÖÖÖÖÖÖTA -->
 
 <!-- 10. Parema klõpsu uuesti lubamine (button k.a) LÕPP-->

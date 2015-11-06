@@ -17,7 +17,7 @@ $page=(isset($_GET['page'])? $_GET['page'] : 'serveripoolsed');
 if(isset($_GET['page'])){
            require $_GET['page'].".php";
     }
-//23. Require lõõ ja 24. Refactor
+//23. Require lõpp ja 24. Refactor
 require $page.".php";
 ?>
 
