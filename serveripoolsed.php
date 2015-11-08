@@ -11,25 +11,37 @@
 $firstName = "Rasmus";
 $lastName = "Pind";
 $vanus = "23";
-$eesnimi_algab_vokaaliga = false;
 
-$isik = array ("$firstName", "$lastName", "($vanus)");
+
+$isik = array(
+    'eesnimi' => 'Rasmus',
+    'perenimi' => 'Pind',
+    'vanus' => 23
+);
+$eesnimi_algab_vokaaliga = false;
+$vocals = array('a', 'e', 'i', 'o', 'u', 'õ', 'ä', 'ö', 'ü');
 
 echo "Minu eesnimi on $firstName ja perekonnanimi $lastName ($vanus)</br>";
 
-// MASSIIVID
-echo "$isik[0] $isik[1] $isik[2]</br>".PHP_EOL;
 
 //if condition
-if ($eesnimi_algab_vokaaliga==true) {
-    echo "Nimi algab vokaaliga";
-    }
+
+echo $isik['eesnimi'] . " " . $isik['perenimi'] . "(" . $isik['vanus'] . ")<br>";
+
+for ($i = 0; $i <= count(@explode(',', $vocals)); $i++) {
+    if (substr(strtoUpper($isik['eesnimi']), 0, 1) == $vocals[$i]) {
+        echo 'Nimi algab vokaaliga.';
+    } else {
+        echo 'Nimi ei alga vokaaliga.';
+    };
+};
+
 
 
 //18. Objektid
 $isik_objekt = (object) array_merge($isik, array('sugu'=>'mees'));
 foreach ($isik_objekt as $key=>$value) {
-    echo "<p>$key : $value</p>";
+echo "<p>$key : $value</p>";
 }
 
 
@@ -46,7 +58,7 @@ echo "$sum</br>";
 
 //21. $get
 if(isset($_GET['koer'])) {
-    echo $_GET ['koer']."</br>";
+echo $_GET ['koer']."</br>";
 };
 // 21. LõPP
 
@@ -58,7 +70,7 @@ if(isset($_GET['koer'])) {
 </form>
 
 <?php
-if(isset($_POST['kass'])) {
+if (isset($_POST['kass'])) {
     echo 'Kass on: ' . $_POST['kass'] . '<br>';
 }
 //22. lõpp
