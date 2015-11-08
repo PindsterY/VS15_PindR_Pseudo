@@ -1,6 +1,6 @@
 <?php
 //24. Require refactor
-$page=(isset($_GET['page'])? $_GET['page'] : 'serveripoolsed');
+$page = (!empty($_GET['page']) ? $_GET['page'] : 'serveripoolsed');
 ?>
 
 <!doctype html>
@@ -11,14 +11,15 @@ $page=(isset($_GET['page'])? $_GET['page'] : 'serveripoolsed');
 </head>
 <body>
 
+<form action="index.php?" method="get">
+    <input name="page">
+    <input type="submit">
+</form>
 
 <?php
-//23. Require
-if(isset($_GET['page'])){
-           require $_GET['page'].".php";
-    }
+
 //23. Require lõpp ja 24. Refactor
-require $page.".php";
+require($page . '.php');
 ?>
 
 
